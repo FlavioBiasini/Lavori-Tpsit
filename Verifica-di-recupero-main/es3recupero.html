@@ -1,0 +1,62 @@
+
+<head>
+
+    <title>DIV CAMBIA COLORE</title>
+
+    <style>
+       #colorBox{
+  
+          width: 50px;
+           height: 50px;
+               background-color: white;
+                  border: 2px;
+                     border-color: black;
+
+       }
+
+    </style>
+
+</head>
+
+<body>
+
+ <div id="gamecontainer">
+
+    <div id="colorBox">
+
+     </div>
+
+</div> 
+
+<script>
+
+      let colore=[];
+
+      colore[0]="black";
+
+         colore[1]="green";
+
+            colore[2]="red";
+
+               colore[3]="yellow";
+
+                  colore[4]="blue";
+
+                     colore[5]="orange";
+
+                        colore[6]="pink";
+
+   const intervallo=setInterval(cambiacolore,1000);
+
+   function cambiacolore() {
+
+      let casuale = parseInt(Math.random()*7);
+
+         document.getElementById("colorBox").style.backgroundColor=colore[casuale];
+ }
+
+</script>
+
+</body>
+
+</html>

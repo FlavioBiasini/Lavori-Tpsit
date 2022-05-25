@@ -1,0 +1,32 @@
+<head>
+
+    <title>Numeri primi 1-100 </title>
+
+<script>
+
+for(n=0;n<100;n++){
+
+    let bOut=true;
+
+for(fattore=2;((fattore<=n/2)&& bOut);fattore++){
+
+         if (n%fattore==0){
+
+            bOut=false;
+cont++;
+        }
+
+}
+
+if(bOut==true){
+document.write(n + ' ');
+    
+}
+}
+document.write(100-cont);
+ 
+
+</script>
+
+
+</head>
